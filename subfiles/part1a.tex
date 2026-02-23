@@ -1,20 +1,12 @@
 %! TEX root = part1.tex
 % the main TeX file which is intended to compile, :VimtexReload after adjustment
+   % this file should be included in the main file
 % :h vimtex-tex-root
 \documentclass[../main.tex]{subfiles}
-% \includeonlyframes{current}
-% \setbeameroption{hide notes} % Only slides
-% \setbeameroption{show only notes} % Only notes
-% \setbeameroption{show notes on second screen=right} % Both
-
+% ensure the class of docs
+% enumerate may not work
 
 \begin{document}
-%
-% \begin{frame}[t,mycolor=digiPH_white,mytitle=standard,light]
-% 	Konten
-% 	\note{dummy text untuk menghindari note pertama tertimpa isi slide}
-% \end{frame}
-
 \begin{frame}[t,mycolor=digiPH_white,mytitle=standard,light]
 	\frametitle{Pengertian Arsitektur \& Struktur}
 
@@ -293,11 +285,12 @@
 
 \end{frame}
 
+\begin{comment}
 
 \begin{frame}[c,mycolor=digiPH_gray,mytitle=standard,light]
 	\frametitle{Tugas Rumah}
 
-	\bgimg{1}{denahrmh}
+	% \bgimg{1}{denahrmh}
 
 \end{frame}
 
@@ -313,11 +306,12 @@
 
 \end{frame}
 
-
-\begin{frame}[c,mycolor=digiPH_gray,mytitle=standard,light]
-	\includegraphics[width=.9\textwidth]{../figures/maketstr.jpg}
-\end{frame}
+\end{comment}
 
 
 
+
+\bibliographystyle{apalike}
+\bibliography{../biblio.bib} % required for citecompletion, not work in mainfile
 \end{document}
+
