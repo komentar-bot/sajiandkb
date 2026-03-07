@@ -1,0 +1,261 @@
+%! TEX root = part3.tex
+% the main TeX file which is intended to compile, :VimtexReload after adjustment
+% :h vimtex-tex-root
+\documentclass[../main.tex]{subfiles}
+% \includeonlyframes{current}
+% \setbeameroption{hide notes} % Only slides
+% \setbeameroption{show only notes} % Only notes
+\setbeameroption{show notes on second screen=right} % Both
+
+\begin{document}
+
+\begin{frame}[mytitle=center,t,mycolor=digiPH_gray,light]
+	\frametitle{Tugas Kelas (Lanjutan)}
+	\txt{digiPH_leaf}{digiPH_white}{Buatlah maket Sloof berdasarkan denah yang tersedia.}
+
+	\footnotesize Kelompok
+
+\end{frame}
+
+
+\begin{frame}[mytitle=center,t,mycolor=digiPH_gray,light]
+	\frametitle{Tugas Rumah (Lanjutan)}
+	\txt{digiPH_leaf}{digiPH_white}{Buatlah maket Kolom berdasarkan denah yang tersedia.}
+
+	\footnotesize Kelompok
+
+	Buatlah Gambar Kerja \Huge Rencana Pondasi \normalsize
+
+	\footnotesize Individu
+
+\end{frame}
+
+\begin{frame}[mytitle=center,t,mycolor=digiPH_gray,light]
+	\frametitle{Kolom}
+
+	\begin{itemize}
+		\item Kolom adalah elemen struktural vertikal yang berfungsi mentransfer beban dari struktur atas ke pondasi.
+		\item Beban dari balok, lantai, dan atap diteruskan melalui kolom ke pondasi.
+		\item Kolom berperan penting menjaga stabilitas bangunan terhadap:
+		      \begin{itemize}
+			      \item Beban vertikal
+			      \item Beban lateral (gempa dan angin)
+		      \end{itemize}
+	\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}[mytitle=standard,t,mycolor=digiPH_ubcblue,dark]
+	\frametitle{Fungsi kolom:}
+	\begin{itemize}
+		\item Menyangga beban vertikal
+		\item Menjaga kestabilan bangunan
+		\item Menahan gaya horizontal
+		\item Elemen arsitektural (estetika bangunan)
+	\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[t,mycolor=digiPH_leaf,mytitle=standard,dark]
+	\frametitle{Klasifikasi Kolom}
+	\ltxt{digiPH_gray}{digiPH_darkblue}{\Huge Kolom \normalsize dapat diklasifikasikan berdasarkan:
+		\begin{itemize}
+			\item Material
+			\item Bentuk penampang
+			\item Jenis beban
+			\item Posisi kolom
+			\item Metode konstruksi
+		\end{itemize}}
+	\rimg{klasifikasi_kolom}
+\end{frame}
+
+
+
+\begin{frame}[label=current,t,mycolor=digiPH_leaf,mytitle=standard,dark]
+	\frametitle{Penentuan Besaran Kolom}
+
+	\begin{itemize}
+
+		\item Penentuan ukuran kolom dapat menggunakan pendekatan bentangan modul.
+
+		\item Modul adalah sistem grid yang digunakan untuk menentukan jarak antar kolom.
+
+	\end{itemize}
+
+
+
+\end{frame}
+
+
+
+
+\begin{frame}[mytitle=center,c,mycolor=digiPH_ocean,dark]\frametitle{Perkiraan dimensi kolom:}
+	\begin{itemize}
+		\item $\frac{1}{10}$ sampai $\frac{1}{12}$ dari bentangan modul
+		\item Bangunan 2 lantai dapat menggunakan sekitar $\frac{1}{20}$ dari bentangan modul
+	\end{itemize}
+
+	\Huge Contoh perhitungan: \normalsize
+
+	\begin{itemize}
+		\item Bentangan modul = 600 cm
+		\item Dimensi kolom = $(1/10 \times 600)$
+		\item Dimensi kolom = $60 \times 60$ cm
+	\end{itemize}\end{frame}
+
+
+
+\begin{frame}[t,mycolor=digiPH_leaf,mytitle=standard,dark]
+	\frametitle{Komponen Kolom}
+
+
+	Kolom umumnya terdiri dari beberapa \Huge elemen utama:
+	\normalsize
+	\begin{itemize}
+		\item Penampang kolom (bentuk kolom)
+		\item Tulangan baja (reinforcement)
+		\item Bahan pengisi
+		\item Penempatan kolom dalam struktur
+	\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[t,mycolor=digiPH_leaf,mytitle=standard,dark]
+	\frametitle{Parameter Perancangan Kolom}
+
+	\framesubtitle{Beban yang ditanggung:}
+
+	\begin{itemize}
+		\item Beban mati
+		\item Beban hidup
+		\item Beban lateral (angin, gempa, tekanan tanah)
+	\end{itemize}
+
+
+
+\end{frame}
+
+
+\begin{frame}[mytitle=standard,c,mycolor=digiPH_gray,light]\framesubtitle{Dimensi kolom:}
+
+	\begin{itemize}
+		\item Tinggi kolom (kekakuan dan risiko tekuk)
+		\item Penampang kolom (daya dukung struktur)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[mytitle=center,c,mycolor=digiPH_ocean,dark]
+	\framesubtitle{Material struktur:}
+
+	\begin{itemize}
+		\item Kuat tekan beton ($f'_c$)
+		\item Kuat leleh baja tulangan ($f_y$)
+	\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[t,mycolor=digiPH_leaf,mytitle=standard,dark]
+	\frametitle{Perbandingan Ukuran Kolom}
+
+	\begin{table}
+		\centering
+		\begin{tabular}{c c c c}
+			\textbf{No}  &  \textbf{Dimensi}  &  \textbf{Kuat Tekan}  &  \textbf{Tulangan}  \\
+			             &  (cm)              &  (kN)                 &  \\
+			\hline
+			1            &  20 x 20           &  400                  &  4D12  \\
+			2            &  25 x 25           &  625                  &  4D16  \\
+			3            &  30 x 30           &  900                  &  6D16  \\
+			4            &  40 x 40           &  1600                 &  8D20  \\
+		\end{tabular}
+	\end{table}
+
+\end{frame}
+
+
+
+\begin{frame}[t,mycolor=digiPH_leaf,mytitle=standard,dark]
+	\frametitle{Perhitungan Luas Penampang Kolom}
+
+	\begin{equation}
+		A_c = \frac{P_u}{\phi f'_c}
+	\end{equation}
+
+	\begin{itemize}
+
+		\item $A_c$ = luas penampang beton tekan
+		\item $P_u$ = beban terfaktor
+		\item $\phi$ = faktor reduksi kekuatan
+		\item $f'_c$ = kuat tekan beton
+
+	\end{itemize}
+
+\end{frame}
+
+
+\begin{comment}
+
+\begin{frame}[t,mycolor=digiPH_leaf,mytitle=standard,dark]
+	\frametitle{Perhitungan Tulangan Kolom}
+
+	\textbf{Tulangan longitudinal}
+
+	\begin{equation}
+		A_s = \frac{P_u - \phi A_c f'_c}{\phi f_y}
+	\end{equation}
+
+	\begin{itemize}
+		\item $A_s$ = luas tulangan baja
+		\item $f_y$ = kuat leleh baja
+	\end{itemize}
+
+	\vspace{0.4cm}
+
+	\textbf{Tulangan sengkang}
+
+	\begin{equation}
+		S = \frac{0.75 d}{\sqrt{f'_c}}
+	\end{equation}
+
+	\begin{itemize}
+		\item $S$ = jarak antar sengkang
+		\item $d$ = tinggi efektif penampang
+	\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}[t,mycolor=digiPH_leaf,mytitle=standard,dark]
+	\frametitle{Pemeriksaan Stabilitas Kolom}
+
+	\begin{itemize}
+
+		\item Stabilitas kolom diperiksa terhadap kemungkinan tekuk.
+
+	\end{itemize}
+
+	\begin{equation}
+		k = \frac{L_e}{r}
+	\end{equation}
+
+	\begin{itemize}
+
+		\item $k$ = rasio kelangsingan kolom
+		\item $L_e$ = panjang efektif kolom
+		\item $r$ = jari-jari girasi penampang
+
+		\item Rasio kelangsingan menentukan apakah kolom termasuk kolom pendek atau kolom langsing.
+
+	\end{itemize}
+
+\end{frame}
+
+
+\end{comment}
+
+\end{document}

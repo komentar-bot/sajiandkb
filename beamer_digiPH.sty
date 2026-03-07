@@ -29,6 +29,8 @@
 \definecolor{digiPH_lightorange}{RGB}{251,139,36}
 \definecolor{digiPH_darkorange}{RGB}{227,100,20}
 \definecolor{digiPH_white}{RGB}{255,255,255}
+\definecolor{digiPH_uniblue}{RGB}{83,121,170}
+\definecolor{digiPH_ubcblue}{rgb}{0.04706, 0.13725, 0.26667}
 
 % Farben anpassen
 \setbeamercolor{title}{fg=digiPH_orange!89}
@@ -59,6 +61,7 @@
 
 \setbeamerfont{frametitle}{size=\fontsize{20}{24}}
 \setbeamerfont{framesubtitle}{size=\fontsize{14}{18}}
+
 
 % Navigationssymbole ausschalten
 \setbeamertemplate{navigation symbols}{}
@@ -188,6 +191,8 @@
 \BeforeBeginEnvironment{frame}{%
 	\setbeamertemplate{background canvas}[color][white]%
 	\setbeamertemplate{frametitle}[standard]
+	\setbeamertemplate{itemize subitem}[square]
+	\setbeamertemplate{itemize subsubitem}[circle]
 	\setbeamercolor{frametitle}{fg=digiPH_black}
 	\setbeamercolor{normal text}{fg=digiPH_black}\usebeamercolor*{normal text}%
 }
@@ -198,11 +203,20 @@
 %
 %-----------------------------------------------------------------------
 \makeatletter
+\define@key{beamerframe}{mytitle}{
+	\setbeamertemplate{frametitle}[#1]
+}
 \define@key{beamerframe}{dark}[true]{%
 	\setbeamercolor{normal text}{fg=white}\usebeamercolor*{normal text}%
 	\setbeamercolor{frametitle}{fg=white}
 	\setbeamercolor{itemize item}{fg=white}
 	\setbeamercolor{itemize subitem}{fg=white}
+}
+\define@key{beamerframe}{mycolor}[true]{%
+	\setbeamertemplate{background canvas}[color][#1]%
+}
+\define@key{beamerframe}{mybg}[true]{%
+	\setbeamertemplate{background canvas}[image][#1]%
 }
 \define@key{beamerframe}{light}[true]{%
 	\setbeamercolor{normal text}{fg=digiPH_black}\usebeamercolor*{normal text}%
@@ -210,15 +224,9 @@
 	\setbeamercolor{itemize item}{fg=digiPH_darkblue}
 	\setbeamercolor{itemize subitem}{fg=digiPH_darkblue}
 }
-\define@key{beamerframe}{mycolor}[true]{%
-	\setbeamertemplate{background canvas}[color][#1]%
-}
-\define@key{beamerframe}{mytitle}[true]{%
-	\setbeamertemplate{frametitle}[#1]
-}
-\define@key{beamerframe}{mybg}[true]{%
-	\setbeamertemplate{background canvas}[image][#1]%
-}
+% \define@key{beamerframe}{mytitle}[true]{%
+% 	\setbeamertemplate{frametitle}[#1]
+% }
 \makeatother
 
 
