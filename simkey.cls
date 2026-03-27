@@ -264,14 +264,14 @@
 	}
 
 	\newcommand{\limg}[1]{
-		\begin{textblock*}{60mm}(0mm,24mm)
-			\includegraphics[width=60mm,height=68mm]{#1}
+		\begin{textblock*}{56mm}(0mm,24mm)
+			\includegraphics[width=56mm,height=58mm]{#1}
 		\end{textblock*}
 	}
 
 	\newcommand{\rimg}[1]{
 		\begin{textblock*}{56mm}(62mm,24mm)
-			\includegraphics[width=56mm,height=68mm]{#1}
+			\includegraphics[width=56mm,height=58mm]{#1}
 		\end{textblock*}
 	}
 
@@ -302,7 +302,7 @@
 	}
 
 	\newcommand{\rtxt}[3]{
-		\begin{textblock*}{60mm}(66mm,24mm)
+		\begin{textblock*}{58mm}(58mm,24mm)
 			\begin{tpblock}{#1}{#2}
 				#3
 			\end{tpblock}
